@@ -5,12 +5,7 @@ import { OpenAI } from 'openai';
 const app = express();
 app.use(cors());
 const openaiKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
-
-<<<<<<< HEAD
-const client = new OpenAI(); // Use .env in real apps
-=======
 const client = new OpenAI({ apiKey: openaiKey }); 
->>>>>>> e5dcfc3 (changes added)
 
 app.get('/api/results', async (req, res) => {
   const prompt = "Write a product description for tesla cars";
